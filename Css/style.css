@@ -1,0 +1,82 @@
+*{ box-sizing: border-box;}
+
+body {background-color: #a0282f;}
+
+/*Start header*/
+h1{margin:50px  100px;text-align: center; text-shadow: 2px 2px 15px #020202}
+
+/* Start Navigation Bar */
+
+.logo{padding: 10px;display: flex; font-size: 30px}
+
+nav {
+  background-color: #25283D;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #340509;    
+  width: 100vw;
+  max-width: 820px;
+  margin: 20px auto 0;
+}
+
+.MainContainer {display: flex; position: relative;}
+
+.MainContainer a{
+  flex: 1;
+  justify-content: center;
+  display: inline-flex;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+}
+
+.MainContainer a:hover {background-color: #1d9b8c;box-shadow: 2px 4px 10px #252125; transition: background-color 0.7s ease;}
+
+.container {
+  display: none;
+  position:absolute;
+  border-radius: 5px;    
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 #541234;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.DrobDown:after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 25px;    
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  z-index: 5;
+}
+
+.DrobDown:hover + .container {display: flex;}
+
+.container:hover {display:flex;}
+
+.Itemlist {flex: 1;display: flex;}
+
+.listItem {padding: 10px 30px;overflow: hidden;}
+
+.listItem > div {
+  color: #DB6356;
+  text-decoration: underline;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*start footer */
+footer{margin-top: 200px;text-align: center;}
